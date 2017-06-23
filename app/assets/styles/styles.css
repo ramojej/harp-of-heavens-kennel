@@ -1,0 +1,7 @@
+@import "normalize.css";
+$mainBlue: blue;
+
+h1 {
+	color: $mainBlue;
+	columns: 300px 2;
+}
