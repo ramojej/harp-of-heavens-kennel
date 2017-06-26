@@ -1,0 +1,25 @@
+.btn {
+	background-color: $mainBlue;
+	border-radius: 25px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.75rem 1.2rem;
+	display: inline-block;
+	margin-top: 25px;
+
+	&--pink {
+		background-color: $mainPink;
+	}
+
+	&--shadow {
+		box-shadow: 0px 4px 10px 4.03px rgba(27, 84, 127, 0.34);
+	}
+
+	&--large {	
+		padding: 1.1rem 1.9rem;
+
+		@mixin atSmall {
+			font-size: 1.25rem;
+		}
+	}
+}

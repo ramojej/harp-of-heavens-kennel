@@ -1,0 +1,24 @@
+.large-hero {
+	background-image: url('../../assets/images/kv-bg.jpg');
+	height: 700px;
+	background-position: center center;
+    background-size: cover;
+
+	&__kv img {
+	width: 350px;
+}
+
+    @mixin atMedium {
+    	&__text-content {
+    		width: 330px;
+    		position: relative;
+    		z-index: 2;
+    		margin-top: 50px;
+    	}
+
+    	&__kv img {
+    		margin-left: 45px;
+    	}
+
+    }
+}

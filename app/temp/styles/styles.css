@@ -426,8 +426,296 @@ template {
   display: none;
 }
 
-h1 {
-	color: blue;
-	-webkit-columns: 300px 2;
-	        columns: 300px 2;
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+	color: #333;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;	
+}
+
+.page-section {
+
+	padding: 1.2rem 0;
+
+
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .page-section {
+    padding: 4.5rem 0;
+  }
+
+  .page-section--large-padding {
+    padding: 7.5rem 0;
+  }
+}
+
+.page-section--no-b-padding-until-medium {
+  padding-bottom: 0;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .page-section--no-b-padding-until-medium {
+    padding-bottom: 4.5rem;
+  }
+}
+
+.page-section--no-b-padding-until-large {
+  padding-bottom: 0;
+}
+
+/* 1200 px or larger */
+
+@media (min-width: 1010px) {
+
+  .page-section--no-b-padding-until-large {
+    padding-bottom: 4.5rem;
+  }
+}
+
+.page-section--blue {
+  background-color: #70a8df;
+  color: #fff;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row--t-padding {
+  padding-top: 80px;
+}
+
+.row--gutters {
+  margin-right: -65px;
+}
+
+.row--gutters-large {
+  margin-right: -100px;
+}
+
+.row--gutters-small {
+  margin-right: -45px;
+}
+
+.row--gutters > div {
+  padding-right: 65px;
+}
+
+.row--gutters-large > div {
+  padding-right: 100px;
+}
+
+.row--gutters-small > div {
+  padding-right: 45px;
+}
+
+.row__b-margin-until-medium {
+  margin-bottom: 1rem;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .row__b-margin-until-medium {
+    margin-bottom: 0;
+  }
+
+  .row__medium-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row__medium-4--larger {
+    width: 37%;
+  }
+
+  .row__medium-6 {
+    float: left;
+    width: 50%;
+  }
+
+  .row__medium-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  .row__medium-8-smaller {
+    width: 63%;
+  }
+}
+
+/* 1200 px or larger */
+
+@media (min-width: 1010px) {
+
+  .row__b-margin-until-large {
+    margin-bottom: 0;
+  }
+
+  .row__large-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row__large-4--larger {
+    width: 37%;
+  }
+
+  .row__large-6 {
+    float: left;
+    width: 50%;
+  }
+
+  .row__large-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  .row__large-8-smaller {
+    width: 63%;
+  }
+}
+
+/* Begin Equal Height Rule */
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .flexbox .row--equal-height-at-medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.flexbox .row--equal-height-at-medium > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* 1200 px or larger */
+
+@media (min-width: 1010px) {
+
+  .flexbox .row--equal-height-at-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.flexbox .row--equal-height-at-large > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper {
+	overflow: hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;
+	margin: 0 auto;
+}
+
+.wrapper--small {
+  max-width: 750px;
+}
+
+.large-hero {
+	background-image: url('../../assets/images/kv-bg.jpg');
+	height: 700px;
+	background-position: center center;
+    background-size: cover;
+}
+
+.large-hero__kv img {
+  width: 350px;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .large-hero__text-content {
+    width: 330px;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+  }
+
+  .large-hero__kv img {
+    margin-left: 45px;
+  }
+}
+
+.headline {
+	font-size: 2.6rem;
+	font-weight: 700;
+}
+
+.headline > span {
+  font-family: 'Playfair Display';
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.headline--white {
+  color: #fff;
+}
+
+.btn {
+	background-color: #70a8df;
+	border-radius: 25px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.75rem 1.2rem;
+	display: inline-block;
+	margin-top: 25px;
+}
+
+.btn--pink {
+  background-color: #e978a0;
+}
+
+.btn--shadow {
+  box-shadow: 0px 4px 10px 4.03px rgba(27, 84, 127, 0.34);
+}
+
+.btn--large {
+  padding: 1.1rem 1.9rem;
+}
+
+/* 530 px or larger */
+
+@media (min-width: 530px) {
+
+  .btn--large {
+    font-size: 1.25rem;
+  }
 }
