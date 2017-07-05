@@ -3,10 +3,20 @@
 	height: 700px;
 	background-position: center center;
     background-size: cover;
+    text-align: center;
+
+    &__kv {
+    	padding: 25px 0 65px 0;
+    }
 
 	&__kv img {
-	width: 350px;
+		box-shadow: 0px 25px 40px 10px rgba(2,88,158,0.65);
+		display: block;
+		margin: 0 auto;
+		width: 350px;
 }
+
+
 
     @mixin atMedium {
     	&__text-content {
@@ -14,11 +24,16 @@
     		position: relative;
     		z-index: 2;
     		margin-top: 50px;
+    		text-align: left;
     	}
 
     	&__kv img {
     		margin-left: 45px;
     	}
 
+    }
+
+    &__text-content p {
+    	color: white;
     }
 }

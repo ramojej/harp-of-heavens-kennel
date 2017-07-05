@@ -1,0 +1,38 @@
+.stats__row {
+	background-color: $mainPink;
+	color: #fff;
+	padding: 2rem 0;
+	text-align: center;
+
+	&--dark-pink {
+		background-color: #d16b8f;
+	}
+
+	.stats--num {
+		font-size: 2rem;
+		letter-spacing: 3px;
+	}
+
+	.stats--catch {
+		display: block;
+		font-size: 1.1rem;
+		margin-top: 10px;
+	}
+
+		@mixin atMedium {
+		& {
+			padding: 4rem 0;
+		}
+
+		.stats--num {
+			font-size: 4rem;
+		}
+
+		.stats--catch {
+			font-size: 1.25rem;		
+		}
+	}
+
+
+}
+
