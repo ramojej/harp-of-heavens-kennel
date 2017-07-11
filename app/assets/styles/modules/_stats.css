@@ -1,38 +1,69 @@
-.stats__row {
+.stats {
 	background-color: $mainPink;
-	color: #fff;
-	padding: 2rem 0;
-	text-align: center;
+	position: relative;
 
-	&--dark-pink {
-		background-color: #d16b8f;
-	}
-
-	.stats--num {
-		font-size: 2rem;
-		letter-spacing: 3px;
-	}
-
-	.stats--catch {
-		display: block;
-		font-size: 1.1rem;
-		margin-top: 10px;
-	}
-
-		@mixin atMedium {
-		& {
-			padding: 4rem 0;
+		&__row {
+		color: #fff;
+		padding: 2rem 0;
+		text-align: center;
 		}
 
-		.stats--num {
-			font-size: 4rem;
+		&__row--dark-pink {
+			background-color: #d16b8f;
 		}
 
-		.stats--catch {
-			font-size: 1.25rem;		
+		&--num {
+			font-size: 2rem;
+			letter-spacing: 3px;
 		}
-	}
 
+		&--catch {
+			display: block;
+			font-size: 1.1rem;
+			margin-top: 10px;
+		}
+
+			@mixin atMedium { 
+
+			&__row {
+				padding: 3rem 0;
+			}	
+
+			&--num {
+				font-size: 4rem;
+			}
+
+			&--catch {
+				font-size: 1.25rem;		
+			}
+
+			&__circle-button {
+				background-color: #d5446a;
+				border-radius: 50%;
+				box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.23);
+				position: absolute;
+				top: -35px;
+				right: 100px;
+				height: 70px;
+				width: 70px;
+				transition: 0.5s box-shadow ease;
+
+				&:hover {
+					box-shadow: 0px 6px 20px 0px rgba(255,255,255,0.23);
+				}
+
+				& > i {
+					color: #fff;
+					font-size: 32px;
+					position: absolute;
+					top: 50%;
+					left: 25px;
+					transform: translateY(-50%);
+				}
+			}
+		}
 
 }
+
+
 

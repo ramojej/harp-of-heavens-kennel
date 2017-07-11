@@ -8,4 +8,9 @@
 	&--small {
 		max-width: 750px;
 	}
+
+	&--no-padding {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
