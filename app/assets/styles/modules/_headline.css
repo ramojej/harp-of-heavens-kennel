@@ -9,7 +9,30 @@
 		font-weight: 400;
 	}
 
+	&--smaller {
+		font-size: 1.8rem;
+	}
+
 	&--white {
 		color: #fff;
+	}
+
+	&--black {
+		color: #585858;
+	}
+
+	&--centered {
+		text-align: center;
+	}
+
+	&--centered-underline:after {
+		content: '';
+		width: 90px;
+		height: 10px;
+		background-color: $mainPink;
+		border-radius: 10px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
 	}
 }
