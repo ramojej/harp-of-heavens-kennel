@@ -34,6 +34,10 @@
 		margin-bottom: 1rem;
 	}
 
+	&--b-padding {
+		padding-bottom: 50px;
+	}
+
 	@mixin atMedium {
 
 		&__b-margin-until-medium {

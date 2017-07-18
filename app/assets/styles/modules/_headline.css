@@ -9,8 +9,14 @@
 		font-weight: 400;
 	}
 
-	&--smaller {
+	&--small {
 		font-size: 1.8rem;
+	}
+
+	&--smaller {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		clear: both;
 	}
 
 	&--white {
@@ -34,5 +40,6 @@
 		display: block;
 		margin: 0 auto;
 		margin-top: 30px;
+		margin-bottom: 60px;
 	}
 }
