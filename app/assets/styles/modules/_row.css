@@ -18,6 +18,10 @@
 		margin-right: -45px;
 	}
 
+	&--gutters-smaller {
+		margin-right: -25px;
+	}
+
 	&--gutters > div {
 		padding-right: 65px;
 	}
@@ -28,6 +32,10 @@
 
 	&--gutters-small > div {
 		padding-right: 45px;
+	}
+
+	&--gutters-smaller > div {
+		padding-right: 25px;
 	}
 
 	&__b-margin-until-medium {

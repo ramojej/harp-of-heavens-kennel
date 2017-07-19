@@ -521,6 +521,10 @@ p {
   margin-right: -45px;
 }
 
+.row--gutters-smaller {
+  margin-right: -25px;
+}
+
 .row--gutters > div {
   padding-right: 65px;
 }
@@ -531,6 +535,10 @@ p {
 
 .row--gutters-small > div {
   padding-right: 45px;
+}
+
+.row--gutters-smaller > div {
+  padding-right: 25px;
 }
 
 .row__b-margin-until-medium {
@@ -653,6 +661,10 @@ p {
 
 .wrapper--small {
   max-width: 750px;
+}
+
+.wrapper--medium {
+  max-width: 1100px;
 }
 
 .wrapper--no-padding {
@@ -880,8 +892,26 @@ p {
   }
 }
 
-.dog-listings__row {
-  box-shadow: 0px 14px 31px 2px rgba(0,0,0,0.25);
+.dog-listings__col {
+  box-shadow: 0px 14px 31px 2px rgba(0,0,0,0.10);
+  margin-bottom: 50px;
+}
+
+.dog-listings__col--last {
+  margin-bottom: 0;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .dog-listings {
+    margin-bottom: 0;
+  }
+}
+
+.dog-listings:not(:first-child) {
+  margin-top: 40px;
 }
 
 .dog-listings-body {
