@@ -1,0 +1,23 @@
+.welcome {
+	background-image: url('../../assets/images/welcome-bg.jpg');
+	background-position: center center;
+    background-size: cover;
+
+	& p {
+		color: #fff;
+	}
+
+	@mixin atMedium {
+		p {
+			width: 400px;
+		}
+	}
+
+	.dog-house {
+		width: 500px;
+		height: 343px;
+		background-image: url('../../assets/images/dog-house-bg.png');
+		background-position: center center;
+		background-size: cover;
+	}
+}

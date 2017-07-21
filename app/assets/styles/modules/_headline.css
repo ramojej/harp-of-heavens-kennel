@@ -35,11 +35,24 @@
 		content: '';
 		width: 90px;
 		height: 10px;
-		background-color: $mainPink;
 		border-radius: 10px;
 		display: block;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 60px;
+	}
+
+	&--left-underline:after {
+		content: '';
+		width: 90px;
+		height: 10px;
+		border-radius: 10px;
+		display: block;
+		margin-top: 30px;
+		margin-bottom: 60px;		
+	}
+
+	&--underline-pink:after {
+		background-color: $mainPink;
 	}
 }

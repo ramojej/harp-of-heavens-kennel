@@ -750,12 +750,25 @@ p {
   content: '';
   width: 90px;
   height: 10px;
-  background-color: #e978a0;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+.headline--left-underline:after {
+  content: '';
+  width: 90px;
+  height: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.headline--underline-pink:after {
+  background-color: #e978a0;
 }
 
 .btn {
@@ -894,11 +907,9 @@ p {
 
 .dog-listings__col {
   box-shadow: 0px 14px 31px 2px rgba(0,0,0,0.10);
-  margin-bottom: 50px;
-}
-
-.dog-listings__col--last {
-  margin-bottom: 0;
+  margin-bottom: 50px;/* &--last {
+			margin-bottom: 0;
+		} */
 }
 
 /* 800 px or larger */
@@ -910,14 +921,37 @@ p {
   }
 }
 
-.dog-listings:not(:first-child) {
-  margin-top: 40px;
-}
-
 .dog-listings-body {
   padding: 20px;
 }
 
 .dog-listings > i {
   margin-bottom: 20px;
+}
+
+.welcome {
+	background-image: url('../../assets/images/welcome-bg.jpg');
+	background-position: center center;
+    background-size: cover;
+}
+
+.welcome p {
+  color: #fff;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .welcome p {
+    width: 400px;
+  }
+}
+
+.welcome .dog-house {
+  width: 500px;
+  height: 343px;
+  background-image: url('../../assets/images/dog-house-bg.png');
+  background-position: center center;
+  background-size: cover;
 }
