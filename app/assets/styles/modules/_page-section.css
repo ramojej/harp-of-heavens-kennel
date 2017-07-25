@@ -10,11 +10,15 @@
 		}	
 	}
 
-	&--no-b-padding-until-medium {
+	&--no-b-padding {
 		padding-bottom: 0;
+	}
+
+	&--large-b-padding {
+		padding-bottom: 31%;
 
 		@mixin atMedium {
-			padding-bottom: 4.5rem;
+			padding-bottom: 10%;
 		}
 	}
 

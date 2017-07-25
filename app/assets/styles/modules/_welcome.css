@@ -2,6 +2,7 @@
 	background-image: url('../../assets/images/welcome-bg.jpg');
 	background-position: center center;
     background-size: cover;
+    position: relative;
 
 	& p {
 		color: #fff;
@@ -14,10 +15,41 @@
 	}
 
 	.dog-house {
-		width: 500px;
-		height: 343px;
 		background-image: url('../../assets/images/dog-house-bg.png');
 		background-position: center center;
 		background-size: cover;
+		position: relative;
+		width: 300px;
+		height: 250px;
+		margin: 0 auto;
+
+		@mixin atMedium {
+			width: 500px;
+			height: 343px;
+			margin-top: 50px;			
+
+		}
+
+		& > img {
+			width: 125px;
+			display: block;
+			margin: 0 auto;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 30%;
+
+			@mixin atMedium {
+				width: 200px;
+				left: 33%;
+			}
+		}
+	}
+
+	&--dog {
+		width: 550px;
+		position: absolute;
+		bottom: 0;
+		left: -5px;
 	}
 }

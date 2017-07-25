@@ -468,16 +468,20 @@ p {
   }
 }
 
-.page-section--no-b-padding-until-medium {
+.page-section--no-b-padding {
   padding-bottom: 0;
+}
+
+.page-section--large-b-padding {
+  padding-bottom: 31%;
 }
 
 /* 800 px or larger */
 
 @media (min-width: 800px) {
 
-  .page-section--no-b-padding-until-medium {
-    padding-bottom: 4.5rem;
+  .page-section--large-b-padding {
+    padding-bottom: 10%;
   }
 }
 
@@ -688,7 +692,7 @@ p {
   box-shadow: 0px 25px 40px 10px rgba(2,88,158,0.65);
   display: block;
   margin: 0 auto;
-  width: 350px;
+  width: 250px;
 }
 
 /* 800 px or larger */
@@ -705,6 +709,7 @@ p {
 
   .large-hero__kv img {
     margin-left: 45px;
+    width: 350px;
   }
 }
 
@@ -764,7 +769,6 @@ p {
   border-radius: 10px;
   display: block;
   margin-top: 30px;
-  margin-bottom: 60px;
 }
 
 .headline--underline-pink:after {
@@ -933,6 +937,7 @@ p {
 	background-image: url('../../assets/images/welcome-bg.jpg');
 	background-position: center center;
     background-size: cover;
+    position: relative;
 }
 
 .welcome p {
@@ -949,9 +954,50 @@ p {
 }
 
 .welcome .dog-house {
-  width: 500px;
-  height: 343px;
   background-image: url('../../assets/images/dog-house-bg.png');
   background-position: center center;
   background-size: cover;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .welcome .dog-house {
+    width: 500px;
+    height: 343px;
+    margin-top: 50px;
+  }
+}
+
+.welcome .dog-house > img {
+  width: 125px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30%;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .welcome .dog-house > img {
+    width: 200px;
+    left: 33%;
+  }
+}
+
+.welcome--dog {
+  width: 550px;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
 }
