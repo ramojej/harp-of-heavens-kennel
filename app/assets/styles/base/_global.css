@@ -1,9 +1,13 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 300;
 	color: #333;
 	margin: 0;
+
+	@mixin atMedium {
+		font-size: 0.875rem;
+	}
 }
 
 img {
@@ -18,4 +22,15 @@ img {
 p {
 	line-height: 1.4rem;
 	color: #666;
+}
+
+.center {
+	text-align: center;
+}
+
+@mixin atMedium {
+	.small-p {
+		width: 250px;
+		margin: 0 auto;
+	}	
 }

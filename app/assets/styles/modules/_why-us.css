@@ -1,0 +1,13 @@
+.raised {
+	position: relative;
+
+	@mixin atMedium {
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			border: 1px solid #000;
+		}		
+	}
+}
+

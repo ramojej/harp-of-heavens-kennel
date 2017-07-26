@@ -7,14 +7,25 @@
 
 	&--small {
 		max-width: 750px;
+		margin: 0 auto;
 	}
 
 	&--medium {
 		max-width: 1100px;
+		margin: 0 auto;
 	}
 
 	&--no-padding {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	@mixin atMedium {
+		&--why-us {
+			border: 1px solid #e5e5e5;
+			padding: 10px 0 30px 0;
+		}		
+	}
+
+
 }
