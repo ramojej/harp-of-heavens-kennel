@@ -75,4 +75,8 @@
 	&--underline-pink:after {
 		background-color: $mainPink;
 	}
+
+	&--underline-blue:after {
+		background-color: $mainBlue;
+	}
 }

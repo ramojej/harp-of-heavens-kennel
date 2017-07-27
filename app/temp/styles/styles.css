@@ -846,6 +846,10 @@ p {
   background-color: #e978a0;
 }
 
+.headline--underline-blue:after {
+  background-color: #70a8df;
+}
+
 .btn {
 	background-color: #70a8df;
 	border-radius: 25px;
@@ -1137,4 +1141,8 @@ p {
             transform: translateY(50%);
     margin-bottom: 0;
   }
+}
+
+.testimonials {
+	background-color: #e978a0;
 }
