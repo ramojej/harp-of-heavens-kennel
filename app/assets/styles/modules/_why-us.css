@@ -1,12 +1,57 @@
 .raised {
+	margin: 55px 0;
 	position: relative;
 
+	&:before {
+		content: '';
+		position: absolute;
+		border: 1px solid #e5e5e5;
+		border-width: 1px 0 0 0;
+		top: -25px;
+		width: 50%;
+		right: 50%;
+		transform: translateX(50%);
+		margin-bottom: 20px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		border: 1px solid #e5e5e5;
+		border-width: 0 0 1px 0;
+		bottom: -45px;
+		width: 50%;
+		right: 50%;
+		transform: translateX(50%);
+		margin-bottom: 20px;		
+	}
+
 	@mixin atMedium {
+
+		margin: 0;
+
+		&:before {
+			content: '';
+			position: absolute;
+			border: 1px solid #e5e5e5;
+			border-width: 0 0 0 1px;
+			left: 0;
+			height: 50%;
+			bottom: 50%;
+			transform: translateY(50%);
+			top: 0;
+		}
+
 		&:after {
 			content: '';
-			display: block;
 			position: absolute;
-			border: 1px solid #000;
+			border: 1px solid #e5e5e5;
+			border-width: 0 1px 0 0;
+			right: 0;
+			height: 50%;
+			bottom: 50%;
+			transform: translateY(50%);
+			margin-bottom: 0;
 		}		
 	}
 }
