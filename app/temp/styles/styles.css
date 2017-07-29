@@ -471,9 +471,18 @@ p {
   }
 }
 
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .primary-nav--pull-right {
+    float: right;
+  }
+}
+
 .page-section {
 
-	padding: 1.2rem 0.625rem;
+	padding: 1.2rem 1.625rem;
 
 
 }
@@ -524,6 +533,11 @@ p {
 .page-section--blue {
   background-color: #70a8df;
   color: #fff;
+}
+
+.site-header {
+	position: absolute;
+	width: 100%;
 }
 
 .row::after {

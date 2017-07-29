@@ -1,0 +1,9 @@
+.primary-nav {
+
+
+	@mixin atMedium {
+		&--pull-right {
+			float: right;
+		}
+	}
+}
