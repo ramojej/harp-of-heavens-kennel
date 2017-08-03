@@ -48,6 +48,10 @@
 
 	@mixin atMedium {
 
+		&--kv{
+			margin-top: 35px;
+		}
+
 		&__b-margin-until-medium {
 			margin-bottom: 0;
 		}

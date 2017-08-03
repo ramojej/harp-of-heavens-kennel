@@ -480,6 +480,43 @@ p {
   }
 }
 
+.primary-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .primary-nav ul {
+    margin-top: 40px;
+  }
+}
+
+.primary-nav li {
+  list-style: none;
+  display: block;
+  float: left;
+  padding-right: 20px;
+}
+
+.primary-nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
 .page-section {
 
 	padding: 1.2rem 1.625rem;
@@ -540,6 +577,28 @@ p {
 	width: 100%;
 }
 
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .site-header {
+    margin-top: 30px;
+  }
+}
+
+.site-header__logo {
+  position: absolute;
+  top: 0;
+  left: auto;
+}
+
+.site-header__logo__graphic {
+  text-indent: -9999px;
+  background-image: url('../../assets/images/hoh-white-logo.png');
+  width: 267px;
+  height: 88px;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -593,6 +652,10 @@ p {
 /* 800 px or larger */
 
 @media (min-width: 800px) {
+
+  .row--kv {
+    margin-top: 35px;
+  }
 
   .row__b-margin-until-medium {
     margin-bottom: 0;

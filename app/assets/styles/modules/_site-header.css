@@ -1,4 +1,21 @@
 .site-header {
 	position: absolute;
 	width: 100%;
+
+	@mixin atMedium {
+		margin-top: 30px;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		left: auto;
+	}
+
+	&__logo__graphic {
+		text-indent: -9999px;
+		background-image: url('../../assets/images/hoh-white-logo.png');
+		width: 267px;
+		height: 88px;
+	}
 }

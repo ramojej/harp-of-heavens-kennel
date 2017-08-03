@@ -1,9 +1,35 @@
 .primary-nav {
 
-
 	@mixin atMedium {
 		&--pull-right {
 			float: right;
 		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		@mixin clearfix;
+
+		@mixin atMedium {
+			margin-top: 40px;
+		}
+	}
+
+	li {
+		list-style: none;
+		display: block;
+		float: left;
+		padding-right: 20px;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		font-weight: 300;
+		font-size: 1rem;
+		padding-bottom: 5px;
 	}
 }
