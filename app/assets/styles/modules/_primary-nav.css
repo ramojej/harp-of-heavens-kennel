@@ -20,16 +20,43 @@
 		list-style: none;
 		display: block;
 		float: left;
-		padding-right: 20px;
+		margin-right: 20px;
+		position: relative;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: block;
+			font-weight: 300;
+			font-size: 1rem;
+			padding-bottom: 5px;
+			text-align: center;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 1px;
+				left: -25%;
+				width: 150%;
+				height: 1px;
+				background: #fff;
+				visibility: hidden;
+				opacity: 0;
+				transition: all 0.3s ease;
+			}
+
+			&.active-menu-item:after, &:hover:after {
+				width: 100%;
+				left: 0;
+				visibility: visible;
+				opacity: 1;
+			}
+
+			
+		}
+
 	}
 
-	a {
-		color: #fff;
-		text-decoration: none;
-		text-transform: uppercase;
-		display: block;
-		font-weight: 300;
-		font-size: 1rem;
-		padding-bottom: 5px;
-	}
+	
 }

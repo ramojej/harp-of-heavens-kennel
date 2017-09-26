@@ -504,10 +504,11 @@ p {
   list-style: none;
   display: block;
   float: left;
-  padding-right: 20px;
+  margin-right: 20px;
+  position: relative;
 }
 
-.primary-nav a {
+.primary-nav li a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -515,6 +516,27 @@ p {
   font-weight: 300;
   font-size: 1rem;
   padding-bottom: 5px;
+  text-align: center;
+}
+
+.primary-nav li a:after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: -25%;
+  width: 150%;
+  height: 1px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.primary-nav li a.active-menu-item:after, .primary-nav li a:hover:after {
+  width: 100%;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
 }
 
 .page-section {
@@ -584,12 +606,12 @@ p {
   .site-header {
     margin-top: 30px;
   }
-}
 
-.site-header__logo {
-  position: absolute;
-  top: 0;
-  left: auto;
+  .site-header__logo {
+    position: absolute;
+    top: 0;
+    left: auto;
+  }
 }
 
 .site-header__logo__graphic {
