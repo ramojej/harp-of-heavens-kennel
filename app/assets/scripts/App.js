@@ -1,3 +1,4 @@
 import $ from 'jquery';
+import StickyHeader from './modules/StickyHeader';
 
-console.log($)
+var stickyHeader = new StickyHeader();
