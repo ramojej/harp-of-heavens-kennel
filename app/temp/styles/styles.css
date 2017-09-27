@@ -502,10 +502,18 @@ p {
 
 .primary-nav li {
   list-style: none;
-  display: block;
-  float: left;
-  margin-right: 20px;
-  position: relative;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .primary-nav li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+  }
 }
 
 .primary-nav li a {
@@ -515,28 +523,32 @@ p {
   display: block;
   font-weight: 300;
   font-size: 1rem;
-  padding-bottom: 5px;
-  text-align: center;
+  padding-bottom: 5px;/* text-align: center; */
 }
 
-.primary-nav li a:after {
-  content: '';
-  position: absolute;
-  bottom: 1px;
-  left: -25%;
-  width: 150%;
-  height: 1px;
-  background: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
+/* 800 px or larger */
 
-.primary-nav li a.active-menu-item:after, .primary-nav li a:hover:after {
-  width: 100%;
-  left: 0;
-  visibility: visible;
-  opacity: 1;
+@media (min-width: 800px) {
+
+  .primary-nav li a:after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: -25%;
+    width: 150%;
+    height: 1px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .primary-nav li a.active-menu-item:after, .primary-nav li a:hover:after {
+    width: 100%;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .page-section {
@@ -597,6 +609,7 @@ p {
 .site-header {
 	position: absolute;
 	width: 100%;
+	background-color: rgba(112,168,223, .90);
 }
 
 /* 800 px or larger */
@@ -605,20 +618,46 @@ p {
 
   .site-header {
     margin-top: 30px;
+    background-color: transparent;
   }
+}
+
+.site-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
 
   .site-header__logo {
-    position: absolute;
-    top: 0;
     left: auto;
   }
 }
 
 .site-header__logo__graphic {
   text-indent: -9999px;
-  background-image: url('../../assets/images/hoh-white-logo.png');
-  width: 267px;
-  height: 88px;
+  background-image: url('../../assets/images/hoh-white-logo-mob.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 58px;
+  margin-top: 10px;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .site-header__logo__graphic {
+    background-image: url('../../assets/images/hoh-white-logo.png');
+    width: 267px;
+    height: 88px;
+  }
 }
 
 .row::after {
