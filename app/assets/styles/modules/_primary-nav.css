@@ -7,9 +7,11 @@
 	}
 
 	ul {
-		margin: 0;
-		padding: 0;
-		/* @mixin clearfix; */
+		position: relative;
+		display: block;
+		padding: 0 48px 0;
+		list-style: none;
+		@mixin clearfix;
 
 		@mixin atMedium {
 			margin-top: 40px;
@@ -17,24 +19,64 @@
 	}
 
 	li {
-		list-style: none;
+		border-bottom: 1px solid #fff;
+		margin-top: 5px;
+		transform: scale(1.15) translateY(-30px);
+		opacity: 0;
+		transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+
+		&:nth-child(1) {
+			transition-delay: 0.49s;
+		}
+
+		&:nth-child(2) {
+			transition-delay: 0.42s;
+		}
+
+		&:nth-child(3) {
+			transition-delay: 0.35s;
+		}
+
+		&:nth-child(4) {
+			transition-delay: 0.28s;
+		}
+
+		&:nth-child(5) {
+			transition-delay: 0.21s;
+		}
+
+		&:nth-child(6) {
+			transition-delay: 0.14s;
+		}
 		
 		@mixin atMedium {
+			transition-property: none;
 			display: block;
 			float: left;
 			margin-right: 20px;
 			position: relative;
+			border-bottom: 0;
+			transform: scale(1) translateY(0);
+			opacity: 1;
+			
 		}
 
 		a {
+			display: block;
+			position: relative;
 			color: #fff;
 			text-decoration: none;
-			text-transform: uppercase;
-			display: block;
+			text-transform: capitalize;
 			font-weight: 300;
-			font-size: 1rem;
-			padding-bottom: 5px;
-			/* text-align: center; */
+			font-size: 1.2rem;
+			line-height: 2.35;
+
+			@mixin atMedium {
+				font-size: 1rem;
+				line-height: 1.7;
+				text-transform: uppercase;
+			}
+			
 
 			@mixin atMedium {
 				&:after {
