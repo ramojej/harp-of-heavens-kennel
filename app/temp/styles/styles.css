@@ -1478,3 +1478,70 @@ p {
 .testimonials {
 	background-color: #e978a0;
 }
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .testimonials__slider-pic {
+    height: 400px;
+    background-image: url('../../assets/images/pug-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+  }
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .testimonials__slider-content {
+    background-color: #fff;
+    padding: 15px;
+    height: 400px;
+    position: relative;
+  }
+
+  .testimonials__slider-content span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .testimonials__slider-content .testimonials-slider__item {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .testimonials__slider-content .testimonials-slider__item.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .testimonials-slider--link {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    background-color: #70a8df;
+    transition: all 0.5s ease;
+  }
+
+  .testimonials-slider--link.active {
+    background-color: #fff;
+  }
+}
+
+.testimonials-slider__controls {
+  width: 100px;
+  margin: 30px auto 0;
+}

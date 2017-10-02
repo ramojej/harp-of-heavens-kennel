@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10390,7 +10390,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jquerySmoothScroll = __webpack_require__(6);
+var _jquerySmoothScroll = __webpack_require__(7);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -10419,8 +10419,62 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 3 */,
-/* 4 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TestiSlider = function () {
+    function TestiSlider() {
+        _classCallCheck(this, TestiSlider);
+
+        this.sliderLength = (0, _jquery2.default)('.testimonials-slider__item').length;
+        this.linkParent = (0, _jquery2.default)('.testimonials-slider__controls');
+        this.current = 1;
+        this.interval = 2500;
+        this.timer;
+        this.createLink();
+    }
+
+    //create the control links, the circle ones
+
+
+    _createClass(TestiSlider, [{
+        key: 'createLink',
+        value: function createLink() {
+            for (var i = 1; i <= this.sliderLength; i++) {
+                (0, _jquery2.default)(this.linkParent).append('<a href="#" class="testimonials-slider--link" data-link="' + i + '"><a>');
+            }
+            (0, _jquery2.default)('a[data-link="1"]').addClass('active');
+        }
+    }, {
+        key: 'slideTesti',
+        value: function slideTesti() {}
+    }]);
+
+    return TestiSlider;
+}();
+
+exports.default = TestiSlider;
+
+/***/ }),
+/* 4 */,
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10438,14 +10492,19 @@ var _MobileMenu = __webpack_require__(1);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
+var _TestiSlider = __webpack_require__(3);
+
+var _TestiSlider2 = _interopRequireDefault(_TestiSlider);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
 var stickyHeader = new _StickyHeader2.default();
+var testiSlider = new _TestiSlider2.default();
 
 /***/ }),
-/* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

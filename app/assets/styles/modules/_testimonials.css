@@ -1,3 +1,62 @@
 .testimonials {
 	background-color: #e978a0;
+
+	&__slider-pic {
+		@mixin atMedium {
+			height: 400px;
+			background-image: url('../../assets/images/pug-bg.jpeg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: right center;
+		}
+	}
+
+	&__slider-content {
+		@mixin atMedium {
+			background-color: #fff;
+			padding: 15px;
+			height: 400px;
+			position: relative;
+	
+			& span {
+				font-size: 1.2rem;
+				font-weight: bold;
+			}
+	
+			.testimonials-slider__item {
+				position: absolute;
+				visibility: hidden;
+				opacity: 0;
+				transition: all 0.5s ease;
+
+				&.active {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&-slider--link {
+		@mixin atMedium {
+			width: 15px;
+			height: 15px;
+			border-radius: 10px;
+			display: block;
+			float: left;
+			margin-right: 5px;
+			background-color: $mainBlue;
+			transition: all 0.5s ease;
+			
+
+			&.active {
+				background-color: #fff;
+			}
+		}
+	}
+
+	&-slider__controls {
+		width: 100px;
+		margin: 30px auto 0;
+	}
 }
