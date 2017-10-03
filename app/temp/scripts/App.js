@@ -10446,9 +10446,11 @@ var TestiSlider = function () {
         this.sliderLength = (0, _jquery2.default)('.testimonials-slider__item').length;
         this.linkParent = (0, _jquery2.default)('.testimonials-slider__controls');
         this.current = 1;
-        this.interval = 2500;
+        this.interval = 2000;
         this.timer;
         this.createLink();
+        this.slideTesti();
+        this.events();
     }
 
     //create the control links, the circle ones
@@ -10462,9 +10464,46 @@ var TestiSlider = function () {
             }
             (0, _jquery2.default)('a[data-link="1"]').addClass('active');
         }
+
+        //rotate the testimonial texts
+
     }, {
         key: 'slideTesti',
-        value: function slideTesti() {}
+        value: function slideTesti() {
+            var that = this;
+
+            that.timer = setInterval(function () {
+                if (that.current !== that.sliderLength) {
+                    that.showTestimonial(that.current += 1);
+                } else {
+                    that.current = 1;
+                    that.showTestimonial(that.current);
+                }
+            }, this.interval);
+        }
+    }, {
+        key: 'events',
+        value: function events() {
+            var that = this;
+
+            (0, _jquery2.default)('.testimonials-slider--link').on('click', function (e) {
+                e.preventDefault();
+                this.current = (0, _jquery2.default)(this).data('link');
+                clearInterval(that.timer); //resets the timer for rotation
+                that.slideTesti(); //slides the texts again
+                console.log(that.slideTesti);
+                that.showTestimonial(this.current);
+            });
+        }
+    }, {
+        key: 'showTestimonial',
+        value: function showTestimonial(testiNumber) {
+            (0, _jquery2.default)('.testimonials__slider-content .testimonials-slider__item').removeClass('active');
+            (0, _jquery2.default)('div[data-item="' + testiNumber + '"]').addClass('active');
+
+            (0, _jquery2.default)('.testimonials-slider--link').removeClass('active');
+            (0, _jquery2.default)('a[data-link="' + testiNumber + '"]').addClass('active');
+        }
     }]);
 
     return TestiSlider;
