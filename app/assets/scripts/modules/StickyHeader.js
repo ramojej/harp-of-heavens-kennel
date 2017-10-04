@@ -8,7 +8,7 @@ class StickyHeader {
     }
 
     addSmoothScrolling() {
-        this.welcomeLink.smoothScroll();
+        this.welcomeLink.smoothScroll({offset: -75, speed: 500});
     }
 }
 

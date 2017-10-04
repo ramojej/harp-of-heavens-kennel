@@ -10409,7 +10409,7 @@ var StickyHeader = function () {
     _createClass(StickyHeader, [{
         key: 'addSmoothScrolling',
         value: function addSmoothScrolling() {
-            this.welcomeLink.smoothScroll();
+            this.welcomeLink.smoothScroll({ offset: -75, speed: 500 });
         }
     }]);
 

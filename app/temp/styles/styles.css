@@ -820,6 +820,15 @@ p {
 @media (min-width: 800px) {
 
   .site-header__logo {
+    left: 18%;
+  }
+}
+
+/* 1200 px or larger */
+
+@media (min-width: 1010px) {
+
+  .site-header__logo {
     left: 25%;
   }
 }
