@@ -1,6 +1,10 @@
 .testimonials {
 	background-color: #e978a0;
 
+	&__row {
+			box-shadow: 0px 10px 39px 3px rgba(0,0,0,0.2);
+	}
+
 	&__slider-pic {
 			height: 400px;
 			background-image: url('../../assets/images/pug-bg.jpeg');
@@ -18,13 +22,33 @@
 			& span {
 				font-size: 1.2rem;
 				font-weight: bold;
+				text-transform: uppercase;
+				text-align: center;
+				display: block;
 			}
 	
 			.testimonials-slider__item {
 				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				padding: 0 20px;
 				visibility: hidden;
 				opacity: 0;
 				transition: all 0.5s ease;
+
+				p {
+					font-size: 1.1rem;
+					line-height: 1.5rem;
+				}
+
+				img {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					margin: 0 auto;
+					display: block;
+					margin-bottom: 10px;
+				}
 
 				&.active {
 					visibility: visible;
@@ -39,8 +63,8 @@
 			border-radius: 10px;
 			display: block;
 			float: left;
-			margin-right: 5px;
-			background-color: $mainBlue;
+			margin-right: 15px;
+			background-color: rgba(255,255,255,.60);
 			transition: all 0.5s ease;
 			
 
