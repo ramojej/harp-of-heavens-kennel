@@ -621,6 +621,19 @@ p {
   }
 }
 
+.page-section--medium-b-padding {
+  padding: 2rem 1.625rem 3.5rem;
+}
+
+/* 800 px or larger */
+
+@media (min-width: 800px) {
+
+  .page-section--medium-b-padding {
+    padding: 4.5rem 0;
+  }
+}
+
 .page-section--no-b-padding {
   padding-bottom: 0;
 }

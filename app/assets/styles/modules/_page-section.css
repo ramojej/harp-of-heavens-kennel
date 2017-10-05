@@ -10,6 +10,14 @@
 		}	
 	}
 
+	&--medium-b-padding {
+		padding: 2rem 1.625rem 3.5rem;
+		
+		@mixin atMedium {
+			padding: 4.5rem 0;
+		}
+	}
+
 	&--no-b-padding {
 		padding-bottom: 0;
 	}
