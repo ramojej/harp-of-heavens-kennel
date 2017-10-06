@@ -126,6 +126,14 @@
 		background-color: transparent;
 		position: absolute;
 		transition-property: none;
+		transition: all 0.5s ease-out;
+
+		&--sticky {
+			margin-top: 0;
+			position: fixed;
+			background-color: #5199e0;
+			height: 75px;
+		}
 	}
 
 	&__logo {
@@ -157,6 +165,11 @@
 			background-image: url('../../assets/images/hoh-white-logo.png');
 			width: 267px;
 			height: 88px;
+
+			.site-header--sticky & {
+				margin-top: -5px;
+				transform: scale(.60);
+			}
 		}
 		
 	}

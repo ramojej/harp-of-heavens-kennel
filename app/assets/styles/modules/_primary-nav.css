@@ -15,6 +15,10 @@
 
 		@mixin atMedium {
 			margin-top: 40px;
+
+			.site-header--sticky & {
+				margin-top: 20px;
+			}
 		}
 	}
 

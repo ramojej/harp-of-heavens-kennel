@@ -500,6 +500,10 @@ p {
   .primary-nav ul {
     margin-top: 40px;
   }
+
+  .site-header--sticky .primary-nav ul {
+    margin-top: 20px;
+  }
 }
 
 .primary-nav li {
@@ -815,6 +819,14 @@ p {
     background-color: transparent;
     position: absolute;
     transition-property: none;
+    transition: all 0.5s ease-out;
+  }
+
+  .site-header--sticky {
+    margin-top: 0;
+    position: fixed;
+    background-color: #5199e0;
+    height: 75px;
   }
 }
 
@@ -864,6 +876,12 @@ p {
     background-image: url('../../assets/images/hoh-white-logo.png');
     width: 267px;
     height: 88px;
+  }
+
+  .site-header--sticky .site-header__logo__graphic {
+    margin-top: -5px;
+    -webkit-transform: scale(.60);
+            transform: scale(.60);
   }
 }
 
@@ -922,7 +940,7 @@ p {
 @media (min-width: 800px) {
 
   .row--kv {
-    margin-top: 35px;
+    margin-top: 65px;
   }
 
   .row__b-margin-until-medium {
