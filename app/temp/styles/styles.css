@@ -1043,6 +1043,11 @@ p {
   margin: 0 auto;
 }
 
+.wrapper--talk {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .wrapper--no-padding {
   padding-left: 0;
   padding-right: 0;
@@ -1577,4 +1582,30 @@ p {
 .testimonials-slider__controls {
   width: 100px;
   margin: 30px auto 0;
+}
+
+.talk-to-expert {
+    background-color: #70a8df;
+}
+
+.talk-to-expert h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.talk-to-expert p {
+  font-weight: bold;
+  display: block;
+  width: 200px;
+  margin: -10px auto 10px;
+}
+
+/* 1200 px or larger */
+
+@media (min-width: 1010px) {
+
+  .talk-to-expert p {
+    margin: 0 auto;
+  }
 }

@@ -15,6 +15,11 @@
 		margin: 0 auto;
 	}
 
+	&--talk {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
 	&--no-padding {
 		padding-left: 0;
 		padding-right: 0;

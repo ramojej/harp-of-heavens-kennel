@@ -1,0 +1,21 @@
+.talk-to-expert {
+    background-color: $mainBlue;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    p {
+        font-weight: bold;
+        display: block;
+        width: 200px;
+        margin: -10px auto 10px;
+
+        @mixin atLarge {
+            margin: 0 auto;
+        }
+        
+    }
+}
