@@ -7,10 +7,13 @@
 
 	&__slider-pic {
 			height: 400px;
-			background-image: url('../../assets/images/pug-bg.jpeg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: right center;
+			&.lazyloaded {
+				background-image: url('../../assets/images/testi-pic-1.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: right center;
+			}
+
 	}
 
 	&__slider-content {

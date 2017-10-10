@@ -1,8 +1,10 @@
 .welcome {
-	background-image: url('../../assets/images/welcome-bg.jpg');
-	background-position: center center;
-    background-size: cover;
-    position: relative;
+	position: relative;
+	&.lazyloaded {
+		background-image: url('../../assets/images/welcome-bg.jpg');
+		background-position: center center;
+		background-size: cover;
+	}
 
 	& p {
 		color: #fff;
@@ -15,20 +17,24 @@
 	}
 
 	.dog-house {
-		background-image: url('../../assets/images/dog-house-bg.png');
-		background-position: center center;
-		background-size: cover;
 		position: relative;
-		width: 300px;
-		height: 250px;
-		margin: 0 auto;
+		&.lazyloaded {
+			background-image: url('../../assets/images/dog-house-bg.png');
+			background-position: center center;
+			background-size: cover;
+			width: 300px;
+			height: 250px;
+			margin: 0 auto;
 
-		@mixin atMedium {
-			width: 500px;
-			height: 343px;
-			margin-top: 50px;			
-
+			@mixin atMedium {
+				width: 500px;
+				height: 343px;
+				margin-top: 50px;			
+	
+			}
 		}
+
+
 
 		& > img {
 			width: 125px;

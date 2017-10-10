@@ -1387,10 +1387,13 @@ p {
 }
 
 .welcome {
-	background-image: url('../../assets/images/welcome-bg.jpg');
-	background-position: center center;
-    background-size: cover;
-    position: relative;
+	position: relative;
+}
+
+.welcome.lazyloaded {
+  background-image: url('../../assets/images/welcome-bg.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
 .welcome p {
@@ -1407,10 +1410,13 @@ p {
 }
 
 .welcome .dog-house {
+  position: relative;
+}
+
+.welcome .dog-house.lazyloaded {
   background-image: url('../../assets/images/dog-house-bg.png');
   background-position: center center;
   background-size: cover;
-  position: relative;
   width: 300px;
   height: 250px;
   margin: 0 auto;
@@ -1420,7 +1426,7 @@ p {
 
 @media (min-width: 800px) {
 
-  .welcome .dog-house {
+  .welcome .dog-house.lazyloaded {
     width: 500px;
     height: 343px;
     margin-top: 50px;
@@ -1531,7 +1537,10 @@ p {
 
 .testimonials__slider-pic {
   height: 400px;
-  background-image: url('../../assets/images/pug-bg.jpeg');
+}
+
+.testimonials__slider-pic.lazyloaded {
+  background-image: url('../../assets/images/testi-pic-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
