@@ -434,8 +434,6 @@ body {
 	margin: 0;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   body {
@@ -461,8 +459,6 @@ p {
 	text-align: center;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .small-p {
@@ -470,8 +466,6 @@ p {
     margin: 0 auto;
   }
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -492,8 +486,6 @@ p {
   clear: both;
   display: table;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -541,8 +533,6 @@ p {
   transition-delay: 0.14s;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .primary-nav li {
@@ -569,8 +559,6 @@ p {
   line-height: 2.35;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .primary-nav li a {
@@ -579,8 +567,6 @@ p {
     text-transform: uppercase;
   }
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -612,8 +598,6 @@ p {
 
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .page-section {
@@ -628,8 +612,6 @@ p {
 .page-section--medium-b-padding {
   padding: 2rem 1.625rem 3.5rem;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -646,8 +628,6 @@ p {
   padding-bottom: 31%;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .page-section--large-b-padding {
@@ -658,8 +638,6 @@ p {
 .page-section--no-b-padding-until-large {
   padding-bottom: 0;
 }
-
-/* 1200 px or larger */
 
 @media (min-width: 1010px) {
 
@@ -689,8 +667,6 @@ p {
   margin-top: 50px;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .site-header__menu-content {
@@ -712,8 +688,6 @@ p {
       -ms-user-select: none;
           user-select: none;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -809,7 +783,7 @@ p {
   transition-delay: 0.62s;
 }
 
-/* 800 px or larger */
+/* site-header for medium devices */
 
 @media (min-width: 800px) {
 
@@ -830,8 +804,6 @@ p {
   }
 }
 
-/* site-header for medium devices */
-
 .site-header__logo {
   position: absolute;
   top: 0;
@@ -840,16 +812,12 @@ p {
           transform: translateX(-50%);
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .site-header__logo {
     left: 18%;
   }
 }
-
-/* 1200 px or larger */
 
 @media (min-width: 1010px) {
 
@@ -867,8 +835,6 @@ p {
   height: 58px;
   margin-top: 10px;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -935,8 +901,6 @@ p {
   padding-bottom: 50px;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .row--kv {
@@ -971,8 +935,6 @@ p {
   }
 }
 
-/* 1200 px or larger */
-
 @media (min-width: 1010px) {
 
   .row__b-margin-until-large {
@@ -1005,8 +967,6 @@ p {
 
 /* Begin Equal Height Rule */
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .flexbox .row--equal-height-at-medium {
@@ -1022,8 +982,6 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
-
-/* 1200 px or larger */
 
 @media (min-width: 1010px) {
 
@@ -1071,8 +1029,6 @@ p {
   padding-right: 0;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .wrapper--why-us {
@@ -1089,8 +1045,6 @@ p {
     background-size: cover;
     text-align: center;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -1110,8 +1064,6 @@ p {
   width: 250px;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .large-hero__kv img {
@@ -1123,8 +1075,6 @@ p {
 .large-hero__text-content {
   margin-top: 70px;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -1146,8 +1096,6 @@ p {
 	line-height: 1.9rem;
 	font-weight: 700;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -1264,8 +1212,6 @@ p {
   padding: 1.1rem 1.9rem;
 }
 
-/* 530 px or larger */
-
 @media (min-width: 530px) {
 
   .btn--large {
@@ -1330,8 +1276,6 @@ p {
           transform: translateY(-50%);
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .stats__row {
@@ -1369,8 +1313,6 @@ p {
 		} */
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .dog-listings {
@@ -1400,8 +1342,6 @@ p {
   color: #fff;
 }
 
-/* 800 px or larger */
-
 @media (min-width: 800px) {
 
   .welcome p {
@@ -1417,12 +1357,10 @@ p {
   background-image: url('../../assets/images/dog-house-bg.png');
   background-position: center center;
   background-size: cover;
-  width: 300px;
+  width: 330px;
   height: 250px;
   margin: 0 auto;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -1443,8 +1381,6 @@ p {
           transform: translateY(-50%);
   left: 30%;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -1491,8 +1427,6 @@ p {
           transform: translateX(50%);
   margin-bottom: 20px;
 }
-
-/* 800 px or larger */
 
 @media (min-width: 800px) {
 
@@ -1627,8 +1561,6 @@ p {
   width: 200px;
   margin: -10px auto 10px;
 }
-
-/* 1200 px or larger */
 
 @media (min-width: 1010px) {
 

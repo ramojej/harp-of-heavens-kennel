@@ -58,7 +58,10 @@
 					</div>
 					<div class="row__medium-8">
 						<div class="large-hero__kv">
-							<img src="assets/images/kv.jpg" alt="">
+							<picture>
+								<source srcset="assets/images/kv.jpg 350w, assets/images/kv-hi-dpi.jpg 700w" media="(min-width: 990px)">
+								<img srcset="assets/images/kv-small.jpg 250w, assets/images/kv-small-hi-dpi.jpg 500w"  alt="Pomeranian - Harp of Heaven's Kennel in Tanza, Cavite">
+							</picture>
 						</div>
 					</div>
 				</div>		
@@ -87,7 +90,7 @@
 					</div>
 					<div class="row__medium-4 stats__row">
 						<span class="stats--num">80</span>	<br>
-						<span class="stats--catch">Loyal Customers</span>
+						<span class="stats--catch">Fur Parents</span>
 					</div>						
 				</div>
 							
@@ -105,7 +108,12 @@
 					
 					<div class="row__medium-4">
 						<div class="dog-listings__col">
-							<img src="assets/images/pic-1.jpg" alt="">
+							<picture>
+								<source data-srcset="assets/images/pup--1-large.jpg 338w, assets/images/pup--1-large-hi-dpi.jpg 676w" media="(min-width:990px)">
+								<source data-srcset="assets/images/pup--1-medium.jpg 680w, assets/images/pup--1-medium-hi-dpi.jpg 1360w" media="(min-width:640px)">	
+								<img class="lazyload" data-srcset="assets/images/pup--1-small.jpg 287w, assets/images/pup--1-small-hi-dpi.jpg 574w" alt="Pomeranian">
+							</picture>
+							
 
 							<div class="dog-listings-body">
 								<i class="fa fa-share-alt pull-right"></i>
@@ -119,7 +127,11 @@
 
 					<div class="row__medium-4">
 						<div class="dog-listings__col">
-							<img src="assets/images/pic-2.jpg" alt="">
+							<picture>
+								<source data-srcset="assets/images/pup--2-large.jpg 338w, assets/images/pup--2-large-hi-dpi.jpg 676w" media="(min-width:990px)">
+								<source data-srcset="assets/images/pup--2-medium.jpg 680w, assets/images/pup--2-medium-hi-dpi.jpg 1360w" media="(min-width:640px)">
+								<img class="lazyload" data-srcset="assets/images/pup--2-small.jpg 287w, assets/images/pup--2-small-hi-dpi.jpg 574w" alt="Pug">
+							</picture>
 
 							<div class="dog-listings-body">
 								<i class="fa fa-share-alt pull-right"></i>
@@ -133,7 +145,11 @@
 
 					<div class="row__medium-4">
 						<div class="dog-listings__col dog-listings__col--last">
-							<img src="assets/images/pic-3.jpg" alt="">
+							<picture>
+								<source data-srcset="assets/images/pup--3-large.jpg 338w, assets/images/pup--3-large-hi-dpi.jpg 676w" media="(min-width:990px)">
+								<source data-srcset="assets/images/pup--3-medium.jpg 680w, assets/images/pup--3-medium-hi-dpi.jpg 1360w" media="(min-width:640px)">
+								<img class="lazyload" data-srcset="assets/images/pup--3-small.jpg 287w, assets/images/pup--3-small-hi-dpi.jpg 574w" alt="Pomeranian">
+							</picture>
 
 							<div class="dog-listings-body">
 								<i class="fa fa-share-alt pull-right"></i>
@@ -168,7 +184,8 @@
 						</div>
 					</div>
 				</div>
-				<img class="welcome--dog" src="../../assets/images/welcome-dog.png" alt="">
+				<source data-srcset="assets/images/welcome-dog-medium.png 550w, assets/images/welcome-dog-medium-hi-dpi.png 1100w" media="(min-width:640px)">
+				<img class="welcome--dog lazyload" data-srcset="assets/images/welcome-dog.png 375w, assets/images/welcome-dog-hi-dpi.png 750w" alt="Dog looking up">
 			</div> <!-- end wrapper -->
 		</section>
 		<!-- END WELCOME TO HOH -->
