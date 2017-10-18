@@ -15,7 +15,7 @@ browserSync = require('browser-sync').create();
 	});
  });
 
-gulp.task('deleteDistFolder', ['icons'], function() {
+gulp.task('deleteDistFolder', function() {
 	return del("./docs");
 });
 
@@ -35,7 +35,7 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 });
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function() {
-	return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*']) //exclude icons folder
+	return gulp.src(['./app/assets/images/**/*']) //exclude icons folder
 		.pipe(imagemin({
 			progressive: true, //optimized jpeg images even further
 			interlaced: true, //will help on gif images
