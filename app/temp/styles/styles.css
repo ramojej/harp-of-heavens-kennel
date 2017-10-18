@@ -434,13 +434,6 @@ body {
 	margin: 0;
 }
 
-@media (min-width: 800px) {
-
-  body {
-    font-size: 0.875rem;
-  }
-}
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -920,6 +913,11 @@ p {
     width: 33.33%;
   }
 
+  .row__medium-4.stats__row {
+    float: left;
+    width: 33.33%;
+  }
+
   .row__medium-4--larger {
     width: 37%;
   }
@@ -1235,8 +1233,11 @@ p {
 
 .stats__row {
   color: #fff;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   text-align: center;
+  font-weight: 100;
+  width: 33%;
+  float: left;
 }
 
 .stats__row--dark-pink {

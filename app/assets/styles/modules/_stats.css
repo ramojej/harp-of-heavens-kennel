@@ -4,8 +4,11 @@
 
 		&__row {
 		color: #fff;
-		padding: 2rem 0;
+		padding: 2rem 1rem;
 		text-align: center;
+		font-weight: 100;
+		width: 33%;
+		float: left;
 		}
 
 		&__row--dark-pink {
