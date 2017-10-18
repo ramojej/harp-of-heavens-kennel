@@ -142,12 +142,12 @@
 		left: 50%;
 		transform: translateX(-50%);
 
-		@mixin atMedium {
-			left: 18%;
-		}
-
 		@mixin atLarge {
 			left: 25%;
+		}
+
+		@mixin atMedium {
+			left: 18%;
 		}
 	}
 

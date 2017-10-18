@@ -5,7 +5,7 @@ class TestiSlider {
         this.sliderLength = $('.testimonials-slider__item').length;
         this.linkParent = $('.testimonials-slider__controls');
         this.current = 1;
-        this.interval = 2000;
+        this.interval = 5000;
         this.timer;
         this.createLink();
         this.slideTesti();

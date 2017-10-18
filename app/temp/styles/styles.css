@@ -426,6 +426,8 @@ template {
   display: none;
 }
 
+/* ipad landscape */
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
@@ -597,8 +599,7 @@ p {
 
 @media (min-width: 800px) {
 
-  .page-section {
-    padding: 4.5rem 0;
+  .page-section {/* padding: 4.5rem 0; */
   }
 
   .page-section--large-padding {
@@ -607,7 +608,7 @@ p {
 }
 
 .page-section--medium-b-padding {
-  padding: 2rem 1.625rem 3.5rem;
+  padding: 2rem 1.1rem 3.5rem;
 }
 
 @media (min-width: 800px) {
@@ -809,17 +810,17 @@ p {
           transform: translateX(-50%);
 }
 
-@media (min-width: 800px) {
-
-  .site-header__logo {
-    left: 18%;
-  }
-}
-
 @media (min-width: 1010px) {
 
   .site-header__logo {
     left: 25%;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .site-header__logo {
+    left: 18%;
   }
 }
 
@@ -1042,7 +1043,7 @@ p {
 
 .large-hero {
 	background-image: url('../../assets/images/kv-bg.jpg');
-	height: 620px;
+	height: 660px;
 	background-position: center center;
     background-size: cover;
     text-align: center;
@@ -1193,6 +1194,13 @@ p {
   background-color: #e978a0;
 }
 
+@media (max-width: 320px) {
+
+  .btn--kv {
+    margin-top: 10px;
+  }
+}
+
 .btn--pink {
   background-color: #e978a0;
   padding: 0.75rem 1.2rem;
@@ -1240,6 +1248,13 @@ p {
   float: left;
 }
 
+@media (max-width: 320px) {
+
+  .stats__row {
+    padding: 1.1rem 1rem;
+  }
+}
+
 .stats__row--dark-pink {
   background-color: #d16b8f;
 }
@@ -1253,6 +1268,13 @@ p {
   display: block;
   font-size: 1.1rem;
   margin-top: 10px;
+}
+
+@media (max-width: 320px) {
+
+  .stats--catch {
+    font-size: 0.8rem;
+  }
 }
 
 .stats__circle-button {
@@ -1311,6 +1333,13 @@ p {
   }
 }
 
+@media (max-width: 320px) {
+
+  .dog-listings {
+    padding: 1.2rem 0;
+  }
+}
+
 .dog-listings__col {
   box-shadow: 0px 14px 31px 2px rgba(0,0,0,0.10);
   margin-bottom: 50px;/* &--last {
@@ -1362,9 +1391,19 @@ p {
   background-image: url('../../assets/images/dog-house-bg.png');
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 330px;
   height: 250px;
   margin: 0 auto;
+}
+
+@media (max-width: 320px) {
+
+  .welcome .dog-house.lazyloaded {
+    width: 100%;
+    background-size: auto;
+    background-image: url('../../assets/images/dog-house-bg-small.png');
+  }
 }
 
 @media (min-width: 800px) {

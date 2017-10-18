@@ -22,16 +22,24 @@
 			background-image: url('../../assets/images/dog-house-bg.png');
 			background-position: center center;
 			background-size: cover;
+			background-repeat: no-repeat;
 			width: 330px;
 			height: 250px;
 			margin: 0 auto;
+
+			@mixin atVerySmall {
+				width: 100%;
+				background-size: auto;
+				background-image: url('../../assets/images/dog-house-bg-small.png');
+			}
 
 			@mixin atMedium {
 				width: 500px;
 				height: 343px;
 				margin-top: 50px;			
-	
 			}
+
+
 		}
 
 

@@ -4,6 +4,12 @@
 	}
 }
 
+@define-mixin atVerySmall {
+	@media (max-width: 320px) {
+	@mixin-content;	
+	}
+}
+
 @define-mixin atMedium {
 	@media (min-width: 800px) {
 	@mixin-content;
@@ -14,6 +20,17 @@
 	@media (min-width: 1010px) {
 	@mixin-content;
 	}	
+}
+
+/* ipad landscape */
+@define-mixin atIpad {
+	@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1024px) 
+	and (orientation: landscape) 
+	and (-webkit-min-device-pixel-ratio: 1) {
+	@mixin-content;
+  }
 }
 
 @define-mixin clearfix {

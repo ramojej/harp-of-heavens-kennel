@@ -12,6 +12,12 @@
 		background-color: $mainPink;
 	}
 
+	&--kv {
+		@mixin atVerySmall {
+			margin-top: 10px;
+		}
+	}
+
 	&--pink {
 		background-color: $mainPink;
 		padding: 0.75rem 1.2rem;
