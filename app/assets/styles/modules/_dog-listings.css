@@ -13,7 +13,6 @@
 		margin-bottom: 0;
 	}
 
-
 	&-body {
 			padding: 20px;
 		}
@@ -21,6 +20,7 @@
 		& > i {
 			margin-bottom: 20px;
 		}
+	
 		
 
 }

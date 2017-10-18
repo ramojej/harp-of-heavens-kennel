@@ -28,6 +28,10 @@ p {
 	text-align: center;
 }
 
+.hide {
+	opacity: 0;
+}
+
 @mixin atMedium {
 	.small-p {
 		width: 250px;
