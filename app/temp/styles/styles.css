@@ -817,7 +817,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1025px) and (min-width: 768px) {
+@media screen and (max-width: 1025px) and (min-width: 769px) {
 
   .site-header__logo {
     left: 18%;
