@@ -11133,7 +11133,7 @@ var AnimateOnScroll = function () {
     _createClass(AnimateOnScroll, [{
         key: 'hideInitially',
         value: function hideInitially() {
-            (0, _jquery2.default)('.dog-listings__col, .welcome--dog, .dog-house').addClass('hide');
+            (0, _jquery2.default)('.dog-listings__col, .welcome--dog').addClass('hide');
         }
     }, {
         key: 'countUp',
@@ -11439,7 +11439,7 @@ var stickyHeader = new _StickyHeader2.default();
 var testiSlider = new _TestiSlider2.default();
 new _AnimateOnScroll2.default((0, _jquery2.default)('.dog-listings__col'), "70%", "animated fadeInLeft");
 new _AnimateOnScroll2.default((0, _jquery2.default)('.welcome--dog'), "60%", "animated fadeInUp");
-new _AnimateOnScroll2.default((0, _jquery2.default)('.dog-house'), "20%", "animated lightSpeedIn");
+// new AnimateOnScroll($('.dog-house'), "20%", "animated fadeInRight");
 
 /***/ }),
 /* 10 */,

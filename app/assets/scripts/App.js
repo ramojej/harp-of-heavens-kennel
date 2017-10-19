@@ -9,4 +9,4 @@ var stickyHeader = new StickyHeader();
 var testiSlider = new TestiSlider();
 new AnimateOnScroll($('.dog-listings__col'), "70%", "animated fadeInLeft");
 new AnimateOnScroll($('.welcome--dog'), "60%", "animated fadeInUp");
-new AnimateOnScroll($('.dog-house'), "20%", "animated lightSpeedIn");
+// new AnimateOnScroll($('.dog-house'), "20%", "animated fadeInRight");

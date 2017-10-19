@@ -65,6 +65,6 @@
 		position: absolute;
 		bottom: 0;
 		left: -5px;
-		animation-delay: 2s;
+		/* animation-delay: 1s; */
 	}
 }

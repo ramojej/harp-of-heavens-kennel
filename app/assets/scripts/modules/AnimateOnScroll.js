@@ -14,7 +14,7 @@ class AnimateOnScroll {
 
     //hide items at page load
     hideInitially() {
-        $('.dog-listings__col, .welcome--dog, .dog-house').addClass('hide');
+        $('.dog-listings__col, .welcome--dog').addClass('hide');
     }
 
     countUp() {
