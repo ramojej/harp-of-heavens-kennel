@@ -22,6 +22,12 @@
 	}	
 }
 
+@define-mixin atBelow1k {
+	@media (max-width: 1025px) {
+	@mixin-content;
+	}
+}
+
 /* ipad landscape */
 @define-mixin atIpad {
 	@media only screen 

@@ -2,7 +2,7 @@
 	position: fixed;
 	height: 75px;
 	width: 100%;
-	background-color: rgba($mainBlue, .90);
+	background-color: $mainBlue;
 	display: block;
 	overflow: hidden;
 	transition: all 0.5s ease-out, background 1s ease-out;
@@ -146,7 +146,7 @@
 			left: 25%;
 		}
 
-		@mixin atMedium {
+		@mixin atBelow1k {
 			left: 18%;
 		}
 	}
